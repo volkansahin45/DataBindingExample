@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filters">
+        <item>@string/filter_all</item>
+        <item>@string/filter_completed</item>
+        <item>@string/filter_uncompleted</item>
+    </string-array>
+</resources>

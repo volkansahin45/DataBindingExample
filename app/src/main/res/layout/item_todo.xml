@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="todo"
+            type="com.vsahin.databindingexample.data.Todo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/todo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{todo.title}"
+            app:strike="@{todo.completed}" />
+    </LinearLayout>
+</layout>
